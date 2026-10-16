@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calendario-proyecto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Contenedor principal: Es el punto de referencia para posicionar el calendario -->
+    <div class="contenedor-fecha">
+        
+        <!-- SECCIÓN 1: El campo de texto y el botón -->
+        <div class="grupo-entrada">
+            <!-- Campo de texto simple con texto de sugerencia (placeholder) -->
+            <input type="text" placeholder="dd / mm / aaaa" class="entrada-fecha" readonly>
+            
+            <!-- Botón con icono (usamos un emoji de calendario) -->
+            <button class="boton-calendario">boton</button>
+        </div>
+
+        <!-- SECCIÓN 2: El Calendario Flotante (Posicionamiento Absoluto) -->
+        <div class="calendario-desplegable">
+            
+            <!-- Encabezado: Flechas y Mes/Año -->
+            <div class="encabezado-calendario">
+                <span class="flecha-navegacion">◀</span>
+                <span class="mes-anio">Diciembre 2022</span>
+                <span class="flecha-navegacion">▶</span>
+            </div>
+
+            <!-- Días de la semana -->
+            <div class="dias-semana">
+                <div>D</div> <!-- Domingo -->
+                <div>L</div> <!-- Lunes -->
+                <div>M</div> <!-- Martes -->
+                <div>M</div> <!-- Miércoles -->
+                <div>J</div> <!-- Jueves -->
+                <div>V</div> <!-- Viernes -->
+                <div>S</div> <!-- Sábado -->
+            </div>
+
+            <!-- Cuadrícula de días (Usando CSS Grid) -->
+            <div class="cuadricula-dias">
+                <!-- Fila 1: Días vacíos hasta el 1 de diciembre (Jueves) -->
+                <div class="vacio"></div>
+                <div class="vacio"></div>
+                <div class="vacio"></div>
+                <div class="vacio"></div>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                
+                <!-- Fila 2 -->
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                
+                <!-- Fila 3 -->
+                <div>11</div>
+                <div>12</div>
+                <div>13</div>
+                <div>14</div>
+                <div>15</div>
+                <div>16</div>
+                <div>17</div>
+                
+                <!-- Fila 4 -->
+                <div>18</div>
+                <div>19</div>
+                <div>20</div>
+                <div>21</div>
+                <div>22</div>
+                <div>23</div>
+                <div>24</div>
+                
+                <!-- Fila 5 -->
+                <div>25</div>
+                <div>26</div>
+                <div>27</div>
+                <div>28</div>
+                <div>29</div>
+                <div>30</div>
+                <div>31</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
